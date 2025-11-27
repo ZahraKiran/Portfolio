@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zahra Kiran – 3D Artist & Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LEFT NAVIGATION -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO / HOME -->
+  <header id="home">
+    <div class="logo">ZK</div>
+    <h1 class="animate">Zahra Kiran</h1>
+    <p class="animate delay">
+      Building digital experiences with modern technologies. Focused on creating elegant 3D and game solutions, with a passion for clean design and immersive environments.
+    </p>
+    <a href="#projects" class="btn animate delay2">View My Work</a>
+  </header>
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate 3D artist and designer with expertise in Blender, Unity, and UI/UX design.
+      I specialize in architectural modeling, environmental modeling, and game-ready assets.
+    </p>
+    <p>
+      My FYP, Zombie Escape, is a third-person survival game set in Karachi, where the city is under a zombie outbreak. Players must complete objectives to save hostages while managing resources like guns, bullets, and a health bar. The game features realistic environments modeled after iconic Karachi landmarks, including Empress Market, Shaheen Complex, Quaid-e-Azam Tomb, and Dolmen Mall, providing an immersive gameplay experience.
+    </p>
+    <div class="info-box">
+      <p><strong>Email:</strong> <a href="mailto:zahrakiran880@gmail.com">zahrakiran880@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+923483213717">0348 3213717</a></p>
+      <p><strong>Location:</strong> Karachi, Pakistan</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <h3>UI / Graphic Work</h3>
+    <div class="image-grid">
+      <img src="ui1.png" alt="UI Design 1">
+      <img src="ui2.png" alt="UI Design 2">
+      <img src="fyp1.png" alt="FYP Screenshot 1">
+      <img src="fyp2.png" alt="FYP Screenshot 2">
+    </div>
+
+    <h3>3D Models</h3>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="landmarks">Landmarks</button>
+      <button class="tab-btn" data-tab="props">Props</button>
+    </div>
+
+    <div class="tab-content active" id="landmarks">
+      <div class="model-grid">
+        <div class="model-card">
+          <h3>Empress Market</h3>
+          <div class="embed-box">
+            <iframe src="https://sketchfab.com/models/54f194e1664b48c1b74ea2da7ce845ba/embed" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="model-card">
+          <h3>Dolmen Clifton</h3>
+          <div class="embed-box">
+            <iframe src="https://sketchfab.com/models/86d617260a8441dda885008280518b3b/embed" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="model-card">
+          <h3>Shaheen Complex</h3>
+          <div class="embed-box">
+            <iframe src="https://sketchfab.com/models/f9073da9672842d5bfa2788922e9929a/embed" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="model-card">
+          <h3>Quaid-e-Azam Tomb</h3>
+          <div class="embed-box">
+            <iframe src="https://sketchfab.com/models/42893db30ae14b7da58247110768676e/embed" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="props">
+      <div class="model-grid">
+        <div class="model-card">
+          <h3>Gazebo</h3>
+          <div class="embed-box">
+            <iframe src="https://sketchfab.com/models/2f7f938f0aaf46ba80e41188c567d912/embed" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-box">
+      <p><strong>Bachelor of Science in Computer Science</strong></p>
+      <p>SZABIST, Karachi (2021 – 2025)</p>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my CV to learn more about my skills, projects, and experience.</p>
+    <a href="Zahra_Kiran_CV.pdf" download class="btn">Download My CV</a>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:zahrakiran880@gmail.com">zahrakiran880@gmail.com</a></p>
+    <p>Phone: <a href="tel:+923483213717">0348 3213717</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/zahra-kiran" target="_blank">linkedin.com/in/zahra-kiran</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Zahra Kiran • 3D Artist & Designer</p>
+    <div class="social">
+      <a href="https://linkedin.com/in/zahra-kiran" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/zahra-kiran" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT FOR TABS AND NAV ACTIVE -->
+  <script>
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const target = btn.getAttribute('data-tab');
+        tabContents.forEach(tc => {
+          tc.id === target ? tc.classList.add('active') : tc.classList.remove('active');
+        });
+      });
+    });
+
+    // Highlight nav links on scroll
+    const sections = document.querySelectorAll('section, header');
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if(pageYOffset >= sectionTop - 150) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if(link.getAttribute('href').substring(1) === current){
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
